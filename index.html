@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataGenConverter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- input container -->
+      <input type="text" id="inputvalue" autocomplete="off" />
+
+      <!-- button container -->
+      <div class="button-container">
+        <button class="btn" onclick="hexToAscii()">Hex to ASCII</button>
+        <button class="btn" onclick="asciiToHex()">ASCII to Hex</button>
+        <button class="btn" onclick="swapValue()">Swap Value</button>
+        <button class="btn" onclick="swapValueWithSpace()">
+          Swap Value with Space
+        </button>
+        <button class="btn" onclick="removeSpaces()">Space Remover</button>
+        <button class="btn" onclick="addSpaces()">Space Add</button>
+        <button class="btn" onclick="accculculation()">Acc</button>
+      </div>
+      <!-- output container -->
+      <div class="output" id="output">Output</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
