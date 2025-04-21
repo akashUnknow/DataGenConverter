@@ -32,6 +32,9 @@ function swapValue() {
     .getElementById("inputvalue")
     .value.trim()
     .replace(/\s+/g, "");
+	console.log(input);
+	console.log(input.length);
+	
   if (input % 2 == 0) {
     let swapped = input.replace(/(.)(.)/g, "$2$1");
     document.getElementById("output").innerText = swapped.trim();
@@ -91,7 +94,7 @@ function accculculation() {
     }
   }
   if (Number(input.length) === 18) {
-    if (regex.test(input)) {
+    if (regex.test(input.replace(/(.)(.)/g, "$2$1"))) {
       let acccal = input.replace(/(.)(.)/g, "$2$1").slice(3);
       let Finalacccal = Math.pow(2, acccal.charAt(acccal.length - 1))
         .toString(16)
